@@ -12,18 +12,11 @@
   # puts shout("hello")
   # puts shout("hello world")
 
-  def repeat(r)
-  "#{r} #{r}"
+  def repeat(r, times = 2)
+    ([r] * times).join(' ')
   end
-
-  # puts repeat("hello")
-
-
-  def repeat_2(g, times = 2)
-  ([g] * times).join(" ")
-  end
-
-  # puts repeat_2("hello", 3)
+  puts repeat("hello")
+  puts repeat("hello", 3)
 
   def start_of_word (word, b = 1)
     return word [0, b]
